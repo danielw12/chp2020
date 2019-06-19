@@ -1,0 +1,263 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #000; }
+
+.black-strip {
+  padding: 15px;
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  overflow-y: hidden; }
+  .black-strip a {
+    text-decoration: underline;
+    color: white; }
+
+/* marquee */
+.example1 {
+  overflow-x: hidden;
+  height: auto; }
+
+.example1 p {
+  font-size: 22px;
+  color: white;
+  margin: 0;
+  text-align: center;
+  white-space: nowrap;
+  display: inline-block;
+  animation: example1 15s linear infinite; }
+
+.example1 p:hover {
+  animation-play-state: paused; }
+
+@keyframes example1 {
+  0% {
+    margin-left: 100%;
+    transform: translateX(0%); }
+  100% {
+    margin-left: 0;
+    transform: translateX(-100%); } }
+/* marquee end*/
+#transparent {
+  background: linear-gradient(to right, #82bf3f 0, #289a4b 100%); }
+  #transparent a {
+    color: white; }
+
+.scrolled {
+  opacity: 0.9; }
+
+.btn-grad {
+  background-image: linear-gradient(to right, #fb6108 0%, #ffb033 51%, #fb6107 100%);
+  background-size: 200% auto;
+  box-shadow: 0 0 20px #ffb033;
+  border-radius: 10px;
+  display: block;
+  color: white;
+  font-size: 32px;
+  text-align: center;
+  line-height: 1;
+  padding: 10px 0;
+  text-decoration: none;
+  text-shadow: 0 5px 2px #fb6107;
+  border: 2px solid white;
+  transition: 0.5s;
+  width: 100%; }
+
+.btn-grad:hover {
+  background-position: right center;
+  text-decoration: none;
+  color: white; }
+
+.btn-box {
+  margin: 0 auto;
+  margin-top: 30px; }
+
+.light-green {
+  color: #82bf3f; }
+
+.green {
+  color: #249840; }
+
+#header {
+  position: relative;
+  background: #eee url(../img/header.jpg) repeat;
+  padding-top: 65px;
+  border-bottom: 5px solid #fb6107; }
+  #header .lady-box {
+    position: relative; }
+    #header .lady-box .lady-img {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: auto; }
+  #header h1 {
+    font-weight: 700;
+    font-size: 58px;
+    letter-spacing: -1px;
+    margin-top: 0; }
+  #header h2 {
+    color: #82bf3f;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 40px; }
+  #header .small {
+    font-size: 21px; }
+
+#description {
+  padding: 50px 0; }
+  #description .content {
+    margin: 0 auto; }
+    #description .content h1 {
+      font-size: 30px;
+      font-weight: 600; }
+  #description .product-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    #description .product-box img {
+      display: block;
+      width: 100%; }
+  #description .about {
+    margin-top: 40px; }
+    #description .about .feature {
+      text-align: center;
+      max-width: 400px;
+      padding: 10px 10px 0 10px;
+      display: block;
+      margin: 10px auto; }
+      #description .about .feature h3 {
+        font-size: 20px;
+        font-weight: 600;
+        border-bottom: 3px solid #249840; }
+
+#clinical-research {
+  background-image: linear-gradient(to right, #134E5E 0%, #71B280 51%, #134E5E 100%);
+  background-size: 200% auto;
+  transition: 1s;
+  padding: 40px 0;
+  color: white; }
+  #clinical-research h2 {
+    font-weight: 600; }
+
+#clinical-research:hover {
+  background-position: right center; }
+
+#opinions {
+  padding: 40px 0; }
+  #opinions h2 {
+    margin-bottom: 30px; }
+
+#order {
+  background: #eee url(../img/header.jpg) repeat;
+  padding-top: 35px;
+  border-bottom: 5px solid #fb6107; }
+  #order img {
+    width: 100%;
+    height: 100%; }
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px 0 10px 0; }
+  footer a {
+    color: white;
+    text-decoration: none; }
+
+/* CAROUSEL */
+@media (min-width: 768px) {
+  /* show 3 items */
+  .carouselPrograms .carousel-inner .active,
+  .carouselPrograms .carousel-inner .active + .carousel-item,
+  .carouselPrograms .carousel-inner .active + .carousel-item + .carousel-item {
+    display: block; }
+
+  .carouselPrograms .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+  .carouselPrograms .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+  .carouselPrograms .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+    transition: none; }
+
+  .carouselPrograms .carousel-inner .carousel-item-next,
+  .carouselPrograms .carousel-inner .carousel-item-prev {
+    position: relative;
+    transform: translate3d(0, 0, 0); }
+
+  .carouselPrograms .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: absolute;
+    top: 0;
+    right: -33.333%;
+    z-index: -1;
+    display: block;
+    visibility: visible; }
+
+  /* left or forward direction */
+  .carouselPrograms .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+  .carouselPrograms .carousel-item-next.carousel-item-left + .carousel-item,
+  .carouselPrograms .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+  .carouselPrograms .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible; }
+
+  /* farthest right hidden item must be abso position for animations */
+  .carouselPrograms .carousel-inner .carousel-item-prev.carousel-item-right {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    z-index: -1;
+    display: block;
+    visibility: visible; }
+
+  /* right or prev direction */
+  .carouselPrograms .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+  .carouselPrograms .carousel-item-prev.carousel-item-right + .carousel-item,
+  .carouselPrograms .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+  .carouselPrograms .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible; } }
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  position: absolute;
+  top: 25%;
+  transform: scale(2);
+  background-color: #fb6107;
+  border-radius: 30px;
+  height: 30px;
+  width: 30px;
+  padding-top: 10px;
+  background-size: 80% 80%; }
+
+.carousel-control-next-icon {
+  right: -20%; }
+
+.carousel-control-prev-icon {
+  left: -20%; }
+
+.carousel-item {
+  padding-top: 20px; }
+
+.carousel .fat-box {
+  box-shadow: 0 0 8px gray;
+  height: 377px;
+  padding-top: 20px;
+  background-color: white; }
+.carousel img {
+  height: 60%;
+  max-width: 90%;
+  width: 365px;
+  height: 290px;
+  display: block;
+  margin: 0 auto; }
+.carousel .opinion-text {
+  min-height: 468px;
+  margin-top: 15px;
+  padding: 20px 20px;
+  background: #f8f8f8;
+  border-bottom: 4px solid #fb6107;
+  display: flex;
+  align-items: center; }
+
+/*# sourceMappingURL=main.css.map */
