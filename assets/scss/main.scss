@@ -68,9 +68,9 @@ body {
 }
 
 .btn-grad {
-    background-image: linear-gradient(to right, #fb6108 0%, #ffb033 51%, #fb6107 100%);
+    background-image: linear-gradient(to right, #DD2476 0%, #FF512F 51%, #DD2476 100%);
     background-size: 200% auto;
-    box-shadow: 0 0 20px #ffb033;
+    box-shadow: 0 0 20px #FF512F;
     border-radius: 10px;
     display: block;
     color: white;
@@ -79,7 +79,7 @@ body {
     line-height: 1;
     padding: 10px 0;
     text-decoration: none;
-    text-shadow: 0 5px 2px #fb6107;
+    text-shadow: 0 5px 2px #DD2476 ;
     border: 2px solid white;
     transition: 0.5s;
     width: 100%;
@@ -87,6 +87,29 @@ body {
 }
 
 .btn-grad:hover {
+    background-position: right center;
+    text-decoration: none;
+    color: white;
+}
+
+.btn-grad-2 {
+    background-image: linear-gradient(to right, #DD2476 0%, #FF512F 51%, #DD2476 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px #FF512F;
+    border-radius: 10px;
+    display: block;
+    color: white;
+    text-align: center;
+    line-height: 1;
+    text-decoration: none;
+    text-shadow: 0 5px 2px #DD2476 ;
+    border: 2px solid white;
+    transition: 0.5s;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.btn-grad-2:hover {
     background-position: right center;
     text-decoration: none;
     color: white;
@@ -322,7 +345,7 @@ footer {
     position: absolute;
     top: 25%;
     transform: scale(2);
-    background-color: #fb6107;
+    background-color:  #DD2476;
     border-radius: 30px;
     height: 30px;
     width: 30px;
