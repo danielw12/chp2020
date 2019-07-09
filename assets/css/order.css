@@ -80,4 +80,12 @@ button {
   .side-box .col-9 {
     padding-left: 0; }
 
+.sum-of-money {
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none; }
+
 /*# sourceMappingURL=order.css.map */

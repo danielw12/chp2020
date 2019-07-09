@@ -41,7 +41,7 @@
                                        <img src="assets/img/6-bottles.png" alt="">
                                    </div>
                                   
-                                  <input type="radio" name="quantity" class="iradio mr-1" value="477.00" required><b>WYBIERZ PAKIET OPTYMALNY</b>
+                                  <input type="radio" name="quantity" class="iradio mr-1 ala" value="477.00" required checked><b>WYBIERZ PAKIET OPTYMALNY</b>
                                     <p>Kup 3 sztuki i otrzymaj 3 GRATIS!</p>
                                     <p>Zapas na 6 miesięcy</p>
                                     <p>79.50 zł / szt.</p>
@@ -53,7 +53,7 @@
                                     <div class="img-box">
                                        <img src="assets/img/3-bottles.png" alt="">
                                    </div>
-                                   <input type="radio" name="quantity" class="iradio mr-1" value="318.00" required><b>WYBIERZ PAKIET STANDARD</b>
+                                   <input type="radio" name="quantity" class="iradio mr-1 ala" value="318.00" required><b>WYBIERZ PAKIET STANDARD</b>
                                     <p>Kup 2 sztuki i otrzymaj 1 GRATIS!</p>
                                     <p>Zapas na 3 miesiące</p>
                                     <p>106.00 zł / szt.</p>
@@ -65,7 +65,7 @@
                                     <div class="img-box">
                                        <img class="last" src="assets/img/product.png" alt="">
                                    </div>
-                                    <input type="radio" name="quantity" class="iradio mr-1" value="159.00" required><b>WYBIERZ PAKIET PODSTAWOWY</b>
+                                    <input type="radio" name="quantity" class="iradio mr-1 ala" value="159.00" required><b>WYBIERZ PAKIET PODSTAWOWY</b>
                                     <p>Tylko 1 sztuka</p>
                                     <br />
                                     <p>Zapas na 1 miesiąc</p>
@@ -333,10 +333,10 @@
                         <h1 class="mt-4">3. WYBIERZ METODĘ PŁATNOŚCI</h1>
                          <div class="green-line mb-3"></div>
                           <div class="col-12">
-                              <label onclick="displayTransport()"><input type="radio" name="payment" class="mr-1 radio2" value="15.00" required>Płacę przy odbiorze - <span id="first-pay">15.00 zł</span></label>
+                              <label onclick="displayTransport()"><input type="radio" name="payment" class="mr-1 radio2 ala" value="15.00" required>Płacę przy odbiorze - <span id="first-pay">15.00 zł</span></label>
                           </div>
                           <div class="col-12">
-                               <label onclick="displayTransport()"><input type="radio" name="payment" class="mr-1 radio2" value="10.00" required checked>Płacę online (przelew, karta, paypal) - <span id="second-pay">10.00 zł</span></label>
+                               <label onclick="displayTransport()"><input type="radio" name="payment" class="mr-1 radio2 ala" value="10.00" required checked>Płacę online (przelew, karta, paypal) - <span id="second-pay">10.00 zł</span></label>
                           </div>
                           
                           <h1 class="mt-3">4. SFINALIZUJ ZAMÓWIENIE</h1>
@@ -346,18 +346,18 @@
                                     <tr>
                                         <th>Wartość pakietu:</th>
                                         <td id="result" class="text-right x">
-                                            10.00 zł
+                                           
                                         </td>
                                     </tr>
                                     <tr>
                                         <th>Dostawa:</th>
                                         <td id="result2" class="text-right x">
-                                            10.00 zł
+                                            
                                         </td>
                                     </tr>
                                     <tr>
                                         <th class="order-total">Łącznie:</th>
-                                        <td class="order-total text-right" id="total-price">0 zł</td>
+                                        <td class="order-total text-right" id="total-price"><input type="text" name="sum" disabled class="text-right sum-of-money"/></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -372,7 +372,7 @@
 								<div class="text"><b>ZAMÓW TERAZ!</b></div>
 							</button>
                     </form>
-                      <button id="count-sum">Oblicz sumę wypłat</button>
+                      <button onclick="displayResult()" id="count-sum">Oblicz sumę wypłat</button>
                 </div>
                 <div class="col-sm-4">
                     <div class="side-box">

@@ -42,18 +42,51 @@ function displayTransport() {
     }
 }
 
+function calcscore(){
+    var score = 0;
+    $(".ala:checked").each(function(){
+        score+=parseInt($(this).val(),10);
+    });
+    $("input[name=sum]").val(score + ".00" + " zł")
+}
+$().ready(function(){
+    $(".ala").change(function(){
+        calcscore()
+    });
+});
+
+
+
+/*
+function displayResult() {
+    document.getElementById("total-price").innerHTML = "";
+    
+    for (i = j = 0; i < olo.length && j < ele.length; i++, j++) {
+
+        if (olo[i].type, ele[j].type = "radio") {
+
+            if (olo[i].checked, ele[j].checked)
+                document.getElementById("total-price").innerHTML += olo[i].value + ele[j].value + " zł";
+        }
+    }
+    
+    
+}
+*/
+
 
 /*  --------------- SUMA -------------- */
 
-var items = $('.x'),
-    cashOut = $('#total-price'),
-    sum = 0;
 
-$.each(items, function(value) {
-  
-  var itemValue = parseFloat(items[value].innerHTML);
-  sum += !isNaN(itemValue) ? itemValue : 0;
-});
-
-cashOut.html(sum + ".00" + " zł");
+//var items = $('.x'),
+//    cashOut = $('#total-price'),
+//    sum = 0;
+//
+//$.each(items, function(value) {
+//  
+//  var itemValue = parseFloat(items[value].innerHTML);
+//  sum += !isNaN(itemValue) ? itemValue : 0;
+//});
+//
+//cashOut.html(sum + ".00" + " zł");
 
