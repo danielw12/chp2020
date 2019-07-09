@@ -43,17 +43,7 @@ function displayTransport() {
 }
 
 
-/*$(function() {
 
-var suma = 0;
-
-$("#count-sum").one("click", function(){
-    $('.x').each(function() {
-        suma += parseFloat($(this).text());
-        $('#total-price').text(suma);
-    });
-  });
-});*/
 
 var items = $('.x'),
     cashOut = $('#total-price'),
