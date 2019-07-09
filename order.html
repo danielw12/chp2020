@@ -36,36 +36,42 @@
                         <div class="container py-3">
                             <div class="row">
                                 <div class="col-sm-4 text-center check-box">
+                                    <label onclick="displayRadioValue()">
                                    <div class="img-box">
                                        <img src="assets/img/6-bottles.png" alt="">
                                    </div>
                                   
-                                    <label onclick="displayRadioValue()"><input type="radio" name="quantity" class="iradio mr-1" value="477.00" required><b>WYBIERZ PAKIET OPTYMALNY</b></label>
+                                  <input type="radio" name="quantity" class="iradio mr-1" value="477.00" required><b>WYBIERZ PAKIET OPTYMALNY</b>
                                     <p>Kup 3 sztuki i otrzymaj 3 GRATIS!</p>
                                     <p>Zapas na 6 miesięcy</p>
                                     <p>79.50 zł / szt.</p>
                                     <p><b>Razem: 477.00 zł</b></p>
+                                    </label>
                                 </div>
                                 <div class="col-sm-4 text-center check-box">
+                                    <label onclick="displayRadioValue()">
                                     <div class="img-box">
                                        <img src="assets/img/3-bottles.png" alt="">
                                    </div>
-                                    <label onclick="displayRadioValue()"><input type="radio" name="quantity" class="iradio mr-1" value="318.00" required><b>WYBIERZ PAKIET STANDARD</b></label>
+                                   <input type="radio" name="quantity" class="iradio mr-1" value="318.00" required><b>WYBIERZ PAKIET STANDARD</b>
                                     <p>Kup 2 sztuki i otrzymaj 1 GRATIS!</p>
                                     <p>Zapas na 3 miesiące</p>
                                     <p>106.00 zł / szt.</p>
                                     <p><b>Razem: 318.00 zł</b></p>
+                                    </label>
                                 </div>
                                 <div class="col-sm-4 text-center check-box">
+                                   <label onclick="displayRadioValue()">
                                     <div class="img-box">
                                        <img class="last" src="assets/img/product.png" alt="">
                                    </div>
-                                    <label onclick="displayRadioValue()"><input type="radio" name="quantity" class="iradio mr-1" value="159.00" required><b>WYBIERZ PAKIET PODSTAWOWY</b></label>
+                                    <input type="radio" name="quantity" class="iradio mr-1" value="159.00" required><b>WYBIERZ PAKIET PODSTAWOWY</b>
                                     <p>Tylko 1 sztuka</p>
                                     <br />
                                     <p>Zapas na 1 miesiąc</p>
                                     <p>159.00 zł / szt.</p>
                                     <p><b>Razem: 159.00 zł</b></p>
+                                    </label>
                                 </div>
                             </div>
                         </div>
@@ -339,13 +345,13 @@
                                 <tbody>
                                     <tr>
                                         <th>Wartość pakietu:</th>
-                                        <td id="result" class="text-right">
-                                            0 zł
+                                        <td id="result" class="text-right x">
+                                            10.00 zł
                                         </td>
                                     </tr>
                                     <tr>
                                         <th>Dostawa:</th>
-                                        <td id="result2" class="text-right">
+                                        <td id="result2" class="text-right x">
                                             0 zł
                                         </td>
                                     </tr>
@@ -355,7 +361,7 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            
+                           
                             <div class="check">
                                 <label><input type="checkbox" name="rules" value="1" required> Przeczytałem i akceptuję <a data-toggle="modal" data-target="#rule_popup">regulamin strony</a> oraz <a data-toggle="modal" data-target="#privacy_popup">politykę prywatności</a></label>
                             </div>
@@ -366,6 +372,7 @@
 								<div class="text"><b>ZAMÓW TERAZ!</b></div>
 							</button>
                     </form>
+                      <button id="count-sum">Oblicz sumę wypłat</button>
                 </div>
                 <div class="col-sm-4">
                     <div class="side-box">

@@ -14,7 +14,7 @@ var ele = document.getElementsByClassName('iradio');
 
 function displayRadioValue() {
     document.getElementById("result").innerHTML = "";
-    
+
 
     for (i = 0; i < ele.length; i++) {
 
@@ -30,7 +30,7 @@ var olo = document.getElementsByClassName('radio2');
 
 function displayTransport() {
     document.getElementById("result2").innerHTML = "";
-    
+
 
     for (i = 0; i < olo.length; i++) {
 
@@ -43,4 +43,27 @@ function displayTransport() {
 }
 
 
+/*$(function() {
+
+var suma = 0;
+
+$("#count-sum").one("click", function(){
+    $('.x').each(function() {
+        suma += parseFloat($(this).text());
+        $('#total-price').text(suma);
+    });
+  });
+});*/
+
+var items = $('.x'),
+    cashOut = $('#total-price'),
+    sum = 0;
+
+$.each(items, function(value) {
+  
+  var itemValue = parseFloat(items[value].innerHTML);
+  sum += !isNaN(itemValue) ? itemValue : 0;
+});
+
+cashOut.html(sum + ".00" + " zł");
 
