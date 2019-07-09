@@ -14,6 +14,12 @@ body {
     text-decoration: underline;
     color: white; }
 
+.order-btn:hover {
+  text-decoration: none; }
+
+.btn-grad-2:hover {
+  cursor: pointer; }
+
 /* marquee */
 .example1 {
   overflow-x: hidden;

@@ -43,7 +43,7 @@ function displayTransport() {
 }
 
 
-
+/*  --------------- SUMA -------------- */
 
 var items = $('.x'),
     cashOut = $('#total-price'),

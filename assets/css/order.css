@@ -44,6 +44,9 @@ section {
   .check-box hr {
     background-color: white; }
 
+.check-box:hover {
+  background-color: green; }
+
 table th {
   border-color: green !important; }
 table td {
@@ -77,4 +80,4 @@ button {
   .side-box .col-9 {
     padding-left: 0; }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=order.css.map */
