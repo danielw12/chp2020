@@ -16,6 +16,9 @@ header {
     font-weight: bold;
     padding: 2px 10px;
     margin-right: 10px; }
+  header .head {
+    display: flex;
+    align-items: center; }
 
 .checked {
   background-color: green; }
