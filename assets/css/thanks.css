@@ -27,6 +27,8 @@ section .container {
   background-color: white;
   border: 1px solid green; }
   section .container img {
-    width: 100%; }
+    width: 90%;
+    display: block;
+    margin: 0 auto; }
 
 /*# sourceMappingURL=thanks.css.map */

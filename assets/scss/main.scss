@@ -253,6 +253,10 @@ body {
 
 #opinions {
     padding: 40px 0;
+    
+    .container {
+        max-width: 1300px;
+    }
 
     h2 {
         margin-bottom: 30px;

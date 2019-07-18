@@ -26,7 +26,7 @@ function displayRadioValue() {
     }
 }
 
-var olo = document.getElementsByClassName('radio2');
+/*var olo = document.getElementsByClassName('radio2');
 
 function displayTransport() {
     document.getElementById("result2").innerHTML = "";
@@ -40,14 +40,14 @@ function displayTransport() {
                 document.getElementById("result2").innerHTML += olo[i].value + " zł";
         }
     }
-}
+}*/
 
 function calcscore(){
     var score = 0;
     $(".ala:checked").each(function(){
         score+=parseInt($(this).val(),10);
     });
-    $("input[name=sum]").val(score + ".00" + " zł")
+    $("input[name=sum]").val(score + 15 + ".00" + " zł")
 }
 $().ready(function(){
     $(".ala").change(function(){
