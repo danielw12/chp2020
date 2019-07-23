@@ -173,7 +173,7 @@ body {
 #opinions {
   padding: 40px 0; }
   #opinions .container {
-    max-width: 1300px; }
+    max-width: 1400px; }
   #opinions h2 {
     margin-bottom: 30px; }
 
@@ -276,7 +276,6 @@ footer {
 .carousel img {
   height: 60%;
   max-width: 90%;
-  width: 365px;
   height: 290px;
   display: block;
   margin: 0 auto; }

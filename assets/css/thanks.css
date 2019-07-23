@@ -10,17 +10,25 @@ header {
   background-color: white;
   margin-bottom: 20px; }
   header .caution {
-    float: left;
     padding-right: 12px;
     background-color: green;
     color: white;
     font-weight: bold;
     padding: 2px 10px;
-    margin-right: 10px; }
+    margin-right: 10px;
+    height: 100%;
+    font-weight: 1em;
+    display: flex;
+    align-items: center; }
+    header .caution p {
+      display: block;
+      margin: 0 auto;
+      font-size: 26px; }
 
 .head {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  font-size: 26px; }
 
 section .container {
   padding: 20px;
